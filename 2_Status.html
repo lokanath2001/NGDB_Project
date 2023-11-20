@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+        {% block content %}
+<div style="margin:30px">
+
+{% for i in prepmat_22 %}
+<div class="container2" style="background-color: #f2f2f2; padding: 20px; margin: 30px;border-radius: 5px;">
+    <h3 style="color: #333; font-family: Arial, sans-serif;">{{ i.Compliant }}</h3>
+    <p class="details">Compliant Type: {{ i.Compliant_Type }}</p>
+    <p class="details">Status: {{ i.Status }}</p>
+    <p class="details">Description: {{ i.Description }}</p>
+    
+  </div>
+{% endfor %}
+</div>
+{% endblock %}
